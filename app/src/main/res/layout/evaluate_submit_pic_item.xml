@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/evaluate_rl_select_pic"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/evaluate_iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/evaluate_add_pic_bg" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/evaluate_iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/evaluate_add_pic"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/evaluate_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingTop="4dp"
+            android:textColor="#4A4E66"
+            android:textSize="13sp"
+            tools:text="abc" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/evaluate_tv_upload_failure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/evaluate_upload_status_bg"
+        android:gravity="center"
+        android:text="@string/evaluate_upload_failure"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/evaluate_upload_progress"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/evaluate_upload_progress"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/evaluate_iv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/evaluate_iv_pic"
+        android:layout_alignEnd="@id/evaluate_iv_pic"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_delete_menu"
+        tools:visibility="visible" />
+
+</RelativeLayout>

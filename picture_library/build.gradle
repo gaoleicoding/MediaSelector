@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion vcode.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion vcode.minSdkVersion
+        targetSdkVersion vcode.targetSdkVersion
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{}
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "src/main/jniLibs"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+//    resourcePrefix 'ucrop_'
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+
+    implementation "androidx.appcompat:appcompat:${vcode.version_appcompat}"
+    implementation "androidx.recyclerview:recyclerview:${vcode.version_recyclerview}"
+    implementation "androidx.concurrent:concurrent-futures:${vcode.futures_version}"
+    implementation "androidx.annotation:annotation-experimental:${vcode.experimental_version}"
+    implementation "com.squareup.okio:okio:${vcode.okio_version}"
+    implementation "androidx.exifinterface:exifinterface:${vcode.androidx_exifinterface_version}"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:${vcode.localbroadcastmanager}"
+    implementation "androidx.camera:camera-view:${vcode.camerax_view}"
+    implementation "androidx.transition:transition:${vcode.androidx_transition_version}"
+    implementation "androidx.camera:camera-lifecycle:${vcode.camerax_version}"
+    //依赖阿里云视频裁剪SDK
+    implementation project(path: ':AliyunCrop')
+    //依赖阿里云视频录制SDK
+    implementation project(path: ':AliyunRecorder')
+}

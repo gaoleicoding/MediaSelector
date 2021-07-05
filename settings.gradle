@@ -1,0 +1,6 @@
+include ':app', ':picture_library'
+include ':AliyunCrop'
+include ':AliyunVideoCommon'
+include ':AlivcMedia'
+include ':AliyunSVideoBase'
+include ':AliyunRecorder'

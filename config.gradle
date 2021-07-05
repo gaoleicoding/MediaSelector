@@ -1,0 +1,58 @@
+ext {
+
+    //Application Layer
+    externalGlide = 'com.github.bumptech.glide:glide:4.8.0'
+
+    //SDK Layer
+    externalOKHTTP = 'com.squareup.okhttp3:okhttp:3.4.0'
+    externalGSON = 'com.google.code.gson:gson:2.8.0'
+
+    //Aliyun SDK
+    externalAliyunVodUpload = 'com.aliyun.video.android:upload:1.6.1'
+    externalAlivcConan = 'com.alivc.conan:AlivcConan:1.0.5'
+
+    externalAlivcFFmpeg =  'com.aliyun.video.android:AlivcFFmpeg:2.0.1'
+    externalAlivcCore = 'com.aliyun.video.android:core:1.2.2'
+    //专业版本
+    externalSvideopro = 'com.aliyun.video.android:svideopro:3.22.0'
+    //标准版本
+    externalSvideostandard = 'com.aliyun.video.android:svideostandard:3.22.0'
+    //基础版本
+    externalSvideosnap = 'com.aliyun.video.android:svideosnap:3.22.0'
+    //Android SDK/Tools Version
+    externalCompileSdkVersion = 29
+    externalBuildToolsVersion = '29.0.2'
+    //The MinSdkVersion of the product you can add like this: externalSVideoMinSdkVersion 15
+    externalMinSdkVersion = 18
+    externalTargetSdkVersion = 29
+
+
+    vcode = [
+
+
+            compileSdkVersion             : 29,
+            buildToolsVersion             : "29.0.2",
+            minSdkVersion                 : 18,
+            targetSdkVersion              : 29,
+            versionCode                   : 51,
+            versionName                   : "v2.7.3-rc03",
+            //open version control
+            version_recyclerview          : "1.2.1",
+            version_appcompat             : "1.3.0",
+            localbroadcastmanager         : "1.0.0",
+            camerax_view                  : "1.0.0-alpha25",
+            camerax_version               : "1.1.0-alpha05",
+            camera_core_version           : "1.0.0-rc04",
+            experimental_version          : "1.1.0",
+            futures_version               : "1.1.0",
+            // ucrop
+            androidx_exifinterface_version: "1.3.2",
+            androidx_transition_version   : "1.4.1",
+            // okio
+            okio_version                  : '3.0.0-alpha.4',
+            // glide
+            glide_version                 : "4.12.0",
+
+
+    ]
+}

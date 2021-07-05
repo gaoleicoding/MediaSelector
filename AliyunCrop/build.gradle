@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion vcode.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion vcode.minSdkVersion
+        targetSdkVersion vcode.targetSdkVersion
+        consumerProguardFiles 'lib-proguard-rules.pro'
+    }
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:${vcode.version_appcompat}"
+    implementation "androidx.recyclerview:recyclerview:${vcode.version_recyclerview}"
+    api project(':AliyunSVideoBase')
+    api project(':AlivcMedia')
+    api project(':AliyunVideoCommon')
+}
