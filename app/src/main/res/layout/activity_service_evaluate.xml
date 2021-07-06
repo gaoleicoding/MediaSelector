@@ -13,4 +13,23 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:overScrollMode="never" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/submit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/evalute_service_btn_bg"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="提 交"
+            android:textColor="@color/evalute_service_btn_color_selector"
+            android:textSize="14sp" />
+    </FrameLayout>
 </RelativeLayout>

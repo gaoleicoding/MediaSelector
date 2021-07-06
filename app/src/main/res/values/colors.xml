@@ -10,9 +10,34 @@
     <color name="app_color_53575e">#53575e</color>
     <color name="app_color_transparent">#00000000</color>
     <color name="app_color_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="app_color_white_transparent">#E0DBDBDB</color>
     <color name="app_color_blue">#7D7DFF</color>
     <color name="app_color_9b">#9b9b9b</color>
     <color name="app_color_e0ff6100">#E0FF6100</color>
     <color name="app_color_red">#FF0000</color>
+
+    <color name="color_0084ff">#0084ff</color>
+    <color name="transparency">#00000000</color>
+    <color name="color_66000000">#66000000</color>
+    <color name="color_cc000000">#cc000000</color>
+
+    <color name="color_777C99">#777C99</color>
+    <color name="color_2B3052">#2B3052</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_FF6D33">#FF6D33</color>
+    <color name="color_F5F6FA">#F5F6FA</color>
+    <color name="color_E5E7F0">#E5E7F0</color>
+    <color name="color_FC6600">#FC6600</color>
+    <color name="color_FF9F39">#FF9F39</color>
+    <color name="color_FF6C39">#FF6C39</color>
+    <color name="color_4D73FF">#4D73FF</color>
+    <color name="color_FACA99">#FACA99</color>
+    <color name="color_FAB199">#FAB199</color>
+    <color name="color_FFEADC">#FFEADC</color>
+    <color name="color_C8CAD7">#C8CAD7</color>
+    <color name="color_FFAB51">#FFAB51</color>
+    <color name="color_FF7B4D">#FF7B4D</color>
+    <color name="color_FF6600">#FF6600</color>
 </resources>
