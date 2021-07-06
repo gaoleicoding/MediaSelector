@@ -6,3 +6,8 @@
 2、兼容Android P、Q
 
 3、视频录制和裁剪使用阿里云短视频SDK基础版，SDK需要付费
+
+
+效果图：
+
+![image](https://github.com/gaoleicoding/MediaSlector/raw/master/imgs/img1.jpg)
