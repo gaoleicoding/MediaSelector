@@ -10,4 +10,4 @@
 
 效果图：
 
-![image](https://github.com/gaoleicoding/MediaSlector/raw/master/imgs/img1.jpg)
+![image](https://github.com/gaoleicoding/MediaSelector/blob/master/imgs/img1.jpg)
